@@ -14,8 +14,8 @@ data_dir: /var/lib/zookeeper
 log_dir: /var/log/zookeeper
 zookeeper_dir: /opt/zookeeper-{{zookeeper_version}}
 
-# List of dict (i.e. {zookeeper_hosts:[{host:,id:},{host:,id:},...]})
+# List of dict (i.e. {zookeeper_hosts:[{address:,id:},{address:,id:},...]})
 zookeeper_hosts:
-  - host: "{{inventory_hostname}}" # the machine running 
+  - address: "{{inventory_hostname}}"
     id: 1
 

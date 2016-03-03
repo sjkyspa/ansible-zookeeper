@@ -1,1 +1,5 @@
-{{ zoo_id }}
+{% for host in zookeeper_hosts %}
+{% if host.address == ipaddr %}
+{{host.id}}
+{% endif %}
+{% endfor %}
